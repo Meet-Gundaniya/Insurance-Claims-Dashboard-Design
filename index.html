@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Claims | Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <!-- Main Header -->
+
+  <header class="header" id="header-section">
+
+    <!-- Nav-bar on top of Main Header -->
+
+    <div class="header__top">
+      <button class="btn icon">
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-chat"></use>
+        </svg>
+        MG Funding
+      </button>
+      <button class="btn header__btn">NEED HELP</button>
+      <div class="icon header__notification active">
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-bell-o"></use>
+        </svg>
+        <span class="icon--dot"></span>
+      </div>
+      <img src="img/profile-pic-small.jpg" alt="avatar" class="profile__img profile__img--small">
+    </div>
+
+    <!-- User Propile -->
+
+    <div class="profile flex__align-items--start">
+      <img src="img/profile-pic.jpg" alt="avatar" class="profile__img profile__img--big">
+      <div class='profile__detail flex__justify-content--start'>
+        <span class="profile__name">Hi, Emma good morning</span>
+        <p><span class="profile__detail--field">Email - </span>akp.emma1231@gmail.com</p>
+        <p><span class="profile__detail--field">Phonee - </span>+91-8897584843</p>
+        <p><span class="profile__detail--field">Address - </span>Po Box 2103 Linden, Nj 07036 (USA)</p>
+        <p><span class="profile__detail--field">plan - </span>$100</p>
+        <p><span class="profile__detail--field">Joined - </span>Mon 22nd Feb 2019</p>
+      </div>
+      <div class="profile__completion">
+        <div class="progress">
+          <div class="c100 p75 orange">
+            <div class="perventage">
+              <div>75%</div>
+            </div>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+        </div>
+        <div class='edit-info'>
+          <span>Profile Completion</span>
+          <p>Please complete profile</p>
+          <button class="btn">COMPLETE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="icon header__background-edit">
+      <svg>
+        <use xlink:href="img/sprite.svg#icon-camera"></use>
+      </svg>
+    </div>
+
+  </header>
+
+
+  <!-- Main Container -->
+
+  <main id="main-container">
+
+    <!-- Side Bar -->
+
+    <section class="side-bar">
+      <div class="about__card">
+        <div class="card__title card__title--bold">
+          <span>ABOUT MY FAMIFY</span>
+          <svg class="card__option--icon">
+            <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+          </svg>
+        </div>
+        <div class="person__category">
+          <span class="person__type">COVERED PERSONS</span>
+          <img class="person__pic" src="img/model-1.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-2.jpg" alt="avatar">
+          <span class="person__type">COVERED PERSONS</span>
+          <img class="person__pic" src="img/model-3.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-4.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-5.jpg" alt="avatar">
+          <span class="person__type">COVERED PERSONS</span>
+          <img class="person__pic" src="img/model-1.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-2.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-3.jpg" alt="avatar">
+          <img class="person__pic" src="img/model-4.jpg" alt="avatar">
+        </div>
+      </div>
+      <div class="about__card">
+        <div class="card__title">
+          <span>ABOUT ME</span>
+          <svg class="card__option--icon">
+            <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+          </svg>
+        </div>
+        <div class="personal__info">
+          <div class="personal__info--field">
+            <span>EMAIL</span>
+            <p>akp.emma1231@gmail.com</p>
+          </div>
+          <div class="personal__info--field">
+            <span>PHONE</span>
+            <p>+91-8897584843</p>
+          </div>
+          <div class="personal__info--field">
+            <span>ADDRESS</span>
+            <p>Po Box 2103 Linden, Nj 07036 (USA)</p>
+          </div>
+          <div class="personal__info--field">
+            <span>PLAN</span>
+            <p>$100</p>
+          </div>
+          <div class="personal__info--field">
+            <span>JOINED</span>
+            <p>Mon 22nd Feb 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Bar -->
+
+    <nav class="nav-bar">
+      <ul>
+        <li class='active'>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-home"></use>
+          </svg>
+          <a href="#">DASHBOARD</a>
+        </li>
+        <li>
+          <a href="#">NEW CLAIMS</a>
+        </li>
+        <li>
+          <a href="#">COMPLETED CLAIMS</a>
+        </li>
+        <li>
+          <a href="#">PAST CLAIMS</a>
+        </li>
+        <li>
+          <a href="#">MEMBERS</a>
+        </li>
+        <li>
+          <a href="#">MY CLAIMS</a>
+        </li>
+      </ul>
+      <button class="btn icon">
+        <svg>
+          <use xlink:href="img/sprite.svg#icon-banknote"></use>
+        </svg>
+        ClAIM
+      </button>
+    </nav>
+
+
+    <div class="container">
+
+      <!-- Member Cards -->
+
+      <div class="member__card">
+        <span class="member__counter">23</span>
+        <div class="divider-1"></div>
+        <div class="members">
+          <span class="member__card--title">NEW CLAIMS</span>
+          <div class="member__friends" total="32">
+            <img src="img/model-2.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-3.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-4.jpg" alt="avatar" class="member__friends--avatar">
+            <span class="member__friends--collapse" total="+32">
+              <img src="img/model-5.jpg" alt="avatar" class="member__friends--avatar">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="member__card">
+        <span class="member__counter">76</span>
+        <div class="divider-1"></div>
+        <div class="members">
+          <span class="member__card--title">NEW MEMBERS</span>
+          <div class="member__friends" total="32">
+            <img src="img/model-2.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-3.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-4.jpg" alt="avatar" class="member__friends--avatar">
+            <span class="member__friends--collapse" total="+32">
+              <img src="img/model-5.jpg" alt="avatar" class="member__friends--avatar">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="member__card">
+        <span class="member__counter">102</span>
+        <div class="divider-1"></div>
+        <div class="members">
+          <span class="member__card--title">TOTAL CLAIMS</span>
+          <div class="member__friends" total="32">
+            <img src="img/model-2.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-3.jpg" alt="avatar" class="member__friends--avatar">
+            <img src="img/model-4.jpg" alt="avatar" class="member__friends--avatar">
+            <span class="member__friends--collapse" total="+32">
+              <img src="img/model-5.jpg" alt="avatar" class="member__friends--avatar">
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Cards -->
+
+      <div class="user__cards">
+        <div class="profile flex__align-items--center">
+          <img src="img/model-1.jpg" alt="avatar" class="profile__img profile__img--normal">
+          <div class='profile__detail flex__justify-content--space-between'>
+            <span class="profile__name">AMELIA KIMANI</span>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-d"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Filed -
+              </span>
+              Thu, Jul 10, 2010 7:30PM EDT
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-m"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Due -
+              </span>
+              Wed, Jul 23, 2019 12:30PM
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Address -
+              </span>
+              Hillside Rd, Hiranandani...
+            </p>
+          </div>
+          <button class="btn icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-banknote"></use>
+            </svg>
+            PAY
+          </button>
+        </div>
+        <div class="profile flex__align-items--center">
+          <img src="img/model-2.jpg" alt="avatar" class="profile__img profile__img--normal">
+          <div class='profile__detail flex__justify-content--space-between'>
+            <span class="profile__name">GENEVIVEVE JUMA</span>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-d"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Filed -
+              </span>
+              Thu, Jul 10, 2010 7:30PM EDT
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-m"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Due -
+              </span>
+              Wed, Jul 23, 2019 12:30PM
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Address -
+              </span>
+              Hillside Rd, Hiranandani...
+            </p>
+          </div>
+          <button class="btn icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-banknote"></use>
+            </svg>
+            PAY
+          </button>
+        </div>
+        <div class="profile flex__align-items--center">
+          <img src="img/model-3.jpg" alt="avatar" class="profile__img profile__img--normal">
+          <div class='profile__detail flex__justify-content--space-between'>
+            <span class="profile__name">THEODORE WACHIRA</span>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-d"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Filed -
+              </span>
+              Thu, Jul 10, 2010 7:30PM EDT
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-m"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Due -
+              </span>
+              Wed, Jul 23, 2019 12:30PM
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Address -
+              </span>
+              Hillside Rd, Hiranandani...
+            </p>
+          </div>
+          <button class="btn icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-banknote"></use>
+            </svg>
+            PAY
+          </button>
+        </div>
+        <div class="profile flex__align-items--center">
+          <img src="img/model-4.jpg" alt="avatar" class="profile__img profile__img--normal">
+          <div class='profile__detail flex__justify-content--space-between'>
+            <span class="profile__name">Hi, Emma good morning</span>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-d"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Filed -
+              </span>
+              Thu, Jul 10, 2010 7:30PM EDT
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-calendar-m"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Due -
+              </span>
+              Wed, Jul 23, 2019 12:30PM
+            </p>
+            <p>
+              <svg class="profile__detail--field-icon">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>
+              <span class="profile__detail--field-bold">
+                Address -
+              </span>
+              Hillside Rd, Hiranandani...
+            </p>
+          </div>
+          <button class="btn icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-banknote"></use>
+            </svg>
+            PAY
+          </button>
+        </div>
+      </div>
+
+      <!-- User Activities -->
+
+      <div class="user__activities">
+        <div class="card__title">
+          <span>ACTIVITY</span>
+          <svg class="card__option--icon">
+            <use xlink:href="img/sprite.svg#icon-dots-three-horizontal"></use>
+          </svg>
+        </div>
+        <div class="user__activity-cards">
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>Claimed $2000</span>
+            </div>
+            <p>23 members are not got claimed in washington DC</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>102 New Members</span>
+            </div>
+            <p>We have 102 registrations check out their profiles</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>3 Claims are waiting</span>
+            </div>
+            <p>Please contribute them, they are Waiting for your help</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>Claimed $2000</span>
+            </div>
+            <p>23 members are not got claimed in washington DC</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>102 New Members</span>
+            </div>
+            <p>We have 102 registrations check out their profiles</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>3 Claims are waiting</span>
+            </div>
+            <p>Please contribute them, they are Waiting for your help</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>Claimed $2000</span>
+            </div>
+            <p>23 members are not got claimed in washington DC</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>102 New Members</span>
+            </div>
+            <p>We have 102 registrations check out their profiles</p>
+            <span>05:40pm</span>
+          </div>
+          <div class="user__activity-card">
+            <div class="user__activity-card--title">
+              <svg class="rainbow-color">
+                <use xlink:href="img/sprite.svg#icon-circle"></use>
+              </svg>
+              <span>3 Claims are waiting</span>
+            </div>
+            <p>Please contribute them, they are Waiting for your help</p>
+            <span>05:40pm</span>
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Script to hendle custom scroll bar-->
+  <script>
+    var overflow_list = [".user__cards", ".user__activities"]
+    overflow_list.forEach(function (item, index) {
+      var els = document.querySelectorAll(item);
+      for (let i = 0; i < els.length; i++) {
+        if (els[i].scrollHeight > els[i].clientHeight) { els[i].classList.add('overflow__scroll--y') }
+        if (els[i].scrollWidth > els[i].clientWidth) { els[i].classList.add('overflow__scroll--x') }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
